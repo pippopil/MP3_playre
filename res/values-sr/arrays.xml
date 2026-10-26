@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>Изузми са листе песама</item>
+        <item>Изузми из целе апликације</item>
+    </string-array>
+</resources>

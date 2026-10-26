@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_item_song_avatar" android:padding="@dimen/image_padding" android:layout_width="@dimen/image_size" android:layout_height="@dimen/image_size" android:scaleType="centerCrop" android:cropToPadding="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="5.0dp" android:layout_marginRight="8.0dp" android:layout_marginBottom="5.0dp" android:layout_toLeftOf="@id/iv_item_add_song_chosen" android:layout_toRightOf="@id/iv_item_song_avatar" android:layout_centerVertical="true">
+        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body2" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_item_song_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textColor="@color/gray" android:ellipsize="end" android:id="@id/tv_item_song_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <CheckBox android:theme="@style/MyCheckBox" android:id="@id/cb_item_song_selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_item_add_song_chosen" android:background="@color/transparent" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="16.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_check" />
+    <View android:background="@color/lightGray" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_marginRight="8.0dp" android:layout_alignParentBottom="true" />
+</RelativeLayout>

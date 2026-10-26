@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_folder" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingRight="@dimen/activity_horizontal_margin" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/item_song">
+        <CheckBox android:theme="@style/MyCheckBox" android:id="@id/cbItemFolderSelected" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_item_folder_avatar" android:layout_width="35.0dp" android:layout_height="30.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:src="@drawable/ic_folder" android:scaleType="centerCrop" android:cropToPadding="true" android:layout_toRightOf="@id/cbItemFolderSelected" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn_show" android:layout_toRightOf="@id/iv_item_folder_avatar" android:layout_centerVertical="true">
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body2" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_item_folder_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Folder Name" android:singleLine="true" />
+            <TextView android:textColor="@color/lightGray2" android:ellipsize="middle" android:id="@id/tv_item_folder_path" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dp" android:text="Path..." android:singleLine="true" android:layout_toLeftOf="@id/tv_item_folder_created" android:layout_below="@id/tv_item_folder_title" />
+        </LinearLayout>
+        <ImageButton android:id="@id/btn_show" android:background="@color/transparent" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_show" android:adjustViewBounds="true" android:layout_toLeftOf="@id/btn_info" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/btn_info" android:background="@color/transparent" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/info" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/lightGray" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

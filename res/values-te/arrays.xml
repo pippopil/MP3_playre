@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>పాట జాబితా నుండి మినహాయించండి</item>
+        <item>మొత్తం అనువర్తనం నుండి మినహాయించండి</item>
+    </string-array>
+</resources>

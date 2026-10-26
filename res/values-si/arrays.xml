@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>ගීත ලැයිස්තුවෙන් ඉවත් කරන්න</item>
+        <item>සම්පූර්ණ යෙදුමෙන් ඉවත් කරන්න</item>
+    </string-array>
+</resources>

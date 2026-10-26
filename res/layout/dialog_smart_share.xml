@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_widget_layout" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/black" android:paddingLeft="4.0dp" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_share_key" />
+    <EditText android:id="@id/tv_key_smart_share" android:padding="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/lbl_share_key_hint" android:maxLines="2" />
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textStyle="bold" android:id="@id/btn_cancel" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_cancel" />
+        <Button android:textStyle="bold" android:id="@id/btn_ok" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

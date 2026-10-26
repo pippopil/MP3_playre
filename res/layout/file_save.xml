@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:background="@color/white_text_0" android:padding="8.0dp" android:layout_width="300.0dp" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white_text_0" android:gravity="center_horizontal" android:id="@id/dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/file_save_title" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white_text_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/ringtone_type_label" />
+    <Spinner android:id="@id/ringtone_type" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white_text_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:text="@string/ringtone_name_label" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textColor="@color/white_text_0" android:textColorHighlight="@color/green_common" android:id="@id/filename" android:background="@null" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:singleLine="true" android:layout_weight="1.0" android:textCursorDrawable="@null">
+            <requestFocus />
+        </EditText>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnClear" android:background="@drawable/ic_close_search" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:selectAllOnFocus="true" />
+    </LinearLayout>
+    <View style="@style/DividerGray" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginTop="@dimen/padding_item_less">
+        <Button android:textColor="@color/white_text_0" android:id="@id/save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_save_button_save" style="@style/Widget.AppCompat.Button.Borderless" />
+        <Button android:textColor="@color/white_text_0" android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_save_button_cancel" style="@style/Widget.AppCompat.Button.Borderless" />
+    </LinearLayout>
+</LinearLayout>

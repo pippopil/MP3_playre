@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?sdkColorActivityBg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/container" android:background="?sdkColorDeviceListBg" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateOnly="false" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutNoItems" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="59.0dp" android:layout_height="72.0dp" android:src="?sdkImageLogo" android:scaleType="fitCenter" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dp" android:text="@string/no_devices_to_send" style="@style/SdkText" />
+    </LinearLayout>
+</RelativeLayout>

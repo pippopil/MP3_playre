@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/pw_song_arrow_up" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-1.0px" android:src="@drawable/arrow_up" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/lbl_sort_by" />
+    <include layout="@layout/layout_menu_song" />
+    <include layout="@layout/layout_menu_album" />
+    <include layout="@layout/layout_menu_artists" />
+    <include layout="@layout/layout_menu_playlist" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_sort_ascending" android:padding="5.0dp" android:layout_width="180.0dp" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/lbl_ascending" android:layout_weight="1.0" />
+        <CheckBox android:layout_gravity="right" android:id="@id/chk_ascending" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="right" android:id="@id/pw_song_arrow_down" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1.0px" android:src="@drawable/arrow_down" />
+</LinearLayout>

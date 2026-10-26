@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kabouzeid.appthemehelper.common.prefs.BorderCircleView android:id="@id/circle" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_margin="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

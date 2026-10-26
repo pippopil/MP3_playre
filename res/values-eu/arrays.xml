@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>Abestien zerrendatik baztertu</item>
+        <item>Aplikazio guztietatik kanpo utzi</item>
+    </string-array>
+</resources>

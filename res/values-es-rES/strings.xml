@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Alert">Alerta</string>
+    <string name="activity">Actividad</string>
+    <string name="activity_message_cancel_transfer">¿Seguro que quieres detener la transferencia?</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_no">No</string>
+    <string name="button_ok">OK</string>
+    <string name="cancel">Cancelar</string>
+    <string name="canceled">Cancelado</string>
+    <string name="completed">Completado</string>
+    <string name="delete">Eliminar</string>
+    <string name="done">Hecho</string>
+    <string name="expired">Caducado</string>
+    <string name="failed">Error</string>
+    <string name="key_expire_in_days">Cad. %1$d días</string>
+    <string name="key_expire_in_hour_minute">Cad. %1$02dH %2$02dM</string>
+    <string name="message_key_expired">La clave (%1$s) ha caducado</string>
+    <string name="message_key_time">Esta clave de 6 dígitos caducará en %s</string>
+    <string name="message_push_key">Los archivos se han enviado</string>
+    <string name="message_transfer_key">Dale al receptor la clave de 6 dígitos</string>
+    <string name="notification_title_transfer">Send Anywhere</string>
+    <string name="receive">Recibir</string>
+    <string name="sdk_files">Archivos</string>
+    <string name="sdk_help_receive_short">Escribe la clave en el campo de ingreso.</string>
+    <string name="sdk_invalid_download_path">"No hay ninguna ubicación de descarga disponible. Selecciona una nueva ubicación. "</string>
+    <string name="sdk_message_invalid_key">"La clave no es válida o ha caducado.
+
+ Comprueba la clave de nuevo."</string>
+    <string name="sdk_new_shared">Nuevo compartido</string>
+    <string name="sdk_receive_ui_edit_key_hint">Introducir clave</string>
+    <string name="sdk_transfer_error_with_code">Se ha producido un error durante la transferencia. (Código: %1$x)</string>
+    <string name="send">Enviar</string>
+    <string name="sent">Enviado</string>
+    <string name="share">Compartir</string>
+    <string name="title_how_it_works">Cómo funciona</string>
+</resources>

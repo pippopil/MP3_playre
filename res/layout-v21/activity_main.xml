@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_screen" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.CoordinatorLayout android:id="@id/coordinator_layout_main" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/fr_player_controls">
+        <android.support.design.widget.AppBarLayout android:id="@id/app_bar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="scroll|enterAlways">
+                <com.tohsoft.music.ui.custom.smarttablayout.SmartTabLayout android:layout_gravity="center_horizontal" android:id="@id/pager_tab" android:layout_width="wrap_content" android:layout_height="49.0dp" app:stl_clickable="true" app:stl_defaultTabBackground="?selectableItemBackground" app:stl_defaultTabSelectedTextColor="@color/green_common" app:stl_defaultTabTextColor="@color/white" app:stl_defaultTabTextHorizontalPadding="16.0dp" app:stl_defaultTabTextMinWidth="0.0dp" app:stl_defaultTabTextSize="14.0sp" app:stl_distributeEvenly="false" app:stl_dividerColor="@color/transparent" app:stl_drawDecorationAfterTab="false" app:stl_indicatorAlwaysInCenter="false" app:stl_indicatorColor="@color/green_common" app:stl_indicatorCornerRadius="2.0dp" app:stl_indicatorGravity="bottom" app:stl_indicatorInFront="false" app:stl_indicatorInterpolation="smart" app:stl_indicatorThickness="3.0dp" app:stl_indicatorWidth="auto" app:stl_indicatorWithoutPadding="false" app:stl_overlineColor="#4d000000" app:stl_overlineThickness="0.0dp" app:stl_titleOffset="24.0dp" app:stl_underlineThickness="1.0dp" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.view.ViewPager android:id="@id/pager_main" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4.0dp" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+    <com.github.clans.fab.FloatingActionMenu android:id="@id/fab_create_playlist" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/fr_player_controls" android:layout_alignParentRight="true" app:menu_backgroundColor="@android:color/transparent" app:menu_colorNormal="@color/green_common" app:menu_colorPressed="@color/green_common" app:menu_colorRipple="@color/green_common" app:menu_labels_ellipsize="end" app:menu_labels_singleLine="true">
+        <com.github.clans.fab.FloatingActionButton android:id="@id/fab_smart_playlist" android:layout_width="wrap_content" android:layout_height="wrap_content" app:backgroundTint="@color/green_common" app:fab_label="Smart Playlist" app:fab_size="mini" app:srcCompat="@drawable/ic_show_playlist" style="@style/MenuButtonsSmall.Green" />
+        <com.github.clans.fab.FloatingActionButton android:id="@id/fab_add_playlist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_add_playlist" app:backgroundTint="@color/green_common" app:fab_label="Add Playlist" app:fab_size="mini" style="@style/MenuButtonsSmall.Green" />
+    </com.github.clans.fab.FloatingActionMenu>
+    <FrameLayout android:id="@id/fr_player_controls" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_banner_bottom" />
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_banner_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <FrameLayout android:id="@id/progress_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.2" />
+        <android.support.v7.widget.AppCompatImageView android:layout_gravity="center" android:background="@drawable/bg_custom_progress" android:padding="15.0dp" android:layout_width="80.0dp" android:layout_height="80.0dp" android:src="@drawable/loading_progress" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/rl_splash" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg5" android:scaleType="centerCrop" />
+        <RelativeLayout android:paddingBottom="50.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/iv_splash_app_icon" android:layout_width="100.0dp" android:layout_height="100.0dp" android:src="@mipmap/app_icon" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_splash_app_name" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_below="@id/iv_splash_app_icon" android:layout_centerHorizontal="true" android:textAllCaps="true" android:elevation="3.0dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

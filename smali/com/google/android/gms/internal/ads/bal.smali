@@ -1,0 +1,43 @@
+.class final synthetic Lcom/google/android/gms/internal/ads/bal;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field private final a:Lcom/google/android/gms/internal/ads/azv;
+
+
+# direct methods
+.method private constructor <init>(Lcom/google/android/gms/internal/ads/azv;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/bal;->a:Lcom/google/android/gms/internal/ads/azv;
+
+    return-void
+.end method
+
+.method static a(Lcom/google/android/gms/internal/ads/azv;)Ljava/lang/Runnable;
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/internal/ads/bal;
+
+    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/ads/bal;-><init>(Lcom/google/android/gms/internal/ads/azv;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/bal;->a:Lcom/google/android/gms/internal/ads/azv;
+
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/azv;->a()V
+
+    return-void
+.end method

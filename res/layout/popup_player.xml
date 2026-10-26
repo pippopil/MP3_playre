@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/mi_add_to_playlist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button">
+        <ImageView android:background="@color/transparent" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/ic_more_add" />
+        <TextView android:textColor="@color/black_gray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/add_to_playlist" />
+    </LinearLayout>
+    <View android:background="@color/lightGray" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:id="@id/mi_add_to_favorite" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button">
+        <ImageView android:background="@color/transparent" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/ic_favourite" />
+        <TextView android:textColor="@color/black_gray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/add_to_favorite" />
+    </LinearLayout>
+    <View android:id="@id/sp_favorite" android:background="@color/lightGray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:id="@id/mi_ringtone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button">
+        <ImageView android:background="@color/transparent" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/ic_ringtone" />
+        <TextView android:textColor="@color/black_gray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/ringtone" />
+    </LinearLayout>
+    <View android:background="@color/lightGray" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:id="@id/mi_effect" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button">
+        <ImageView android:background="@color/transparent" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/ic_sound_effect" />
+        <TextView android:textColor="@color/black_gray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/effect" />
+    </LinearLayout>
+    <View android:background="@color/lightGray" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:id="@id/mi_song_share" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button">
+        <ImageView android:background="@color/transparent" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/ic_share_context" />
+        <TextView android:textColor="@color/black_gray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/settings_share" />
+    </LinearLayout>
+    <View android:background="@color/lightGray" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:id="@id/mi_song_smartshare" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button">
+        <ImageView android:background="@color/transparent" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/ic_share_3" />
+        <TextView android:textColor="@color/black_gray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/lbl_smartshare" />
+    </LinearLayout>
+    <View android:background="@color/lightGray" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:id="@id/mi_song_properties" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button">
+        <ImageView android:background="@color/transparent" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="3.0dp" app:srcCompat="@drawable/ic_properties" />
+        <TextView android:textColor="@color/black_gray" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/mi_properties" />
+    </LinearLayout>
+</LinearLayout>

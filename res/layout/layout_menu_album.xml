@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_layout_menu_album" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:padding="5.0dp" android:layout_width="180.0dp" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/tab_album_title" android:layout_weight="1.0" />
+        <RadioButton android:layout_gravity="right" android:id="@id/rb_sort_album_albums" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_no_off_track" android:background="@color/transparent" android:padding="5.0dp" android:layout_width="180.0dp" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/lbl_no_of_tracks" android:layout_weight="1.0" />
+        <RadioButton android:layout_gravity="right" android:id="@id/rb_sort_no_tracks_albums" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

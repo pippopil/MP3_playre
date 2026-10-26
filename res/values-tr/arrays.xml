@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>Şarkı listesinden çıkar</item>
+        <item>Tüm uygulamadan hariç tut</item>
+    </string-array>
+</resources>

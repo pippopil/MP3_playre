@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>ដកចេញពីបញ្ជីចំរៀង</item>
+        <item>ដកចេញពីកម្មវិធីទាំងមូល</item>
+    </string-array>
+</resources>

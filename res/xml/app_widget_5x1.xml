@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:minWidth="@dimen/app_widget_classic_min_width_2" android:minHeight="@dimen/app_widget_classic_min_height_2" android:updatePeriodMillis="0" android:initialLayout="@layout/app_widget_classic_5x1" android:configure="com.tohsoft.music.pservices.appwidgets.Act_5x1_DialogBlurActivity" android:previewImage="@drawable/widget_preview_5x1" android:resizeMode="none"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

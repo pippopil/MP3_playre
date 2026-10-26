@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>曲リストから除外</item>
+        <item>アプリ全体から除外する</item>
+    </string-array>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tohsoft.music.utils.NestedScrollCoordinatorLayout android:id="@id/coordinator_layout_main" android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout android:id="@id/app_bar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="scroll|enterAlways">
+                <RelativeLayout android:id="@id/box_search" android:background="@color/colorToolbar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+                    <TextView android:textSize="15.0sp" android:textColor="@color/lightGray2" android:gravity="left|center" android:id="@id/txt_search_title" android:paddingLeft="5.0dp" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginRight="50.0dp" android:text="@string/title_select_root" android:layout_centerVertical="true" />
+                    <android.support.v7.widget.SwitchCompat android:id="@id/btn_show_root" android:layout_width="50.0dp" android:layout_height="match_parent" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:theme="@style/SwitchStyle" />
+                </RelativeLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_folders" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/app_bar" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <android.support.v7.widget.RecyclerView android:id="@id/rv_folders" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </com.tohsoft.music.utils.NestedScrollCoordinatorLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/toolbar_height" layout="@layout/layout_empty_ads" />
+    <FrameLayout android:id="@id/fr_folder_details" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:id="@id/fr_tree_folder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

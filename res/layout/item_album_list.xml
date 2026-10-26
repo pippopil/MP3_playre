@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:paddingRight="@dimen/activity_horizontal_margin" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_item_album_art" android:padding="@dimen/image_padding" android:layout_width="@dimen/image_size_big" android:layout_height="@dimen/image_size_big" android:src="@drawable/ic_img_album_default" android:scaleType="centerCrop" android:cropToPadding="true" android:layout_centerVertical="true" />
+            <TextView android:textColor="@color/white" android:id="@id/tv_song_count" android:background="@color/green_common" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dp" android:text="20" android:layout_alignRight="@id/iv_item_album_art" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_toLeftOf="@id/ib_item_album_more_list" android:layout_toRightOf="@id/iv_item_album_art" android:layout_centerVertical="true">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body2" android:textSize="@dimen/playlist_title" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_item_album_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Album name" android:singleLine="true" />
+                <TextView android:textColor="@color/gray" android:ellipsize="end" android:id="@id/tv_item_album_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Album info" android:singleLine="true" android:layout_below="@id/tv_item_artist_name" />
+            </LinearLayout>
+            <ImageButton android:id="@id/ib_item_album_more_list" android:background="@color/transparent" android:layout_width="@dimen/icon_size_in_list" android:layout_height="@dimen/image_size" android:foreground="@drawable/style_highlight_button" android:src="@drawable/ic_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/lightGray" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</RelativeLayout>

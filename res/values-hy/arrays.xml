@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>Բացառում է երգերի ցանկից</item>
+        <item>Բաց թողնել ամբողջ հավելվածից</item>
+    </string-array>
+</resources>

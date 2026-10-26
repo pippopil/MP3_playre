@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>از لیست آهنگ حذف شود</item>
+        <item>از کل برنامه حذف شود</item>
+    </string-array>
+</resources>

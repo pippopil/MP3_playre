@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?sdkColorDeviceBg" android:paddingLeft="16.0dp" android:paddingTop="12.0dp" android:paddingBottom="17.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:background="?android:selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dp" android:textColor="?sdkColorDeviceProfile" android:id="@id/textProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="profile" />
+        <TextView android:textSize="14.0dp" android:textColor="?sdkColorTextNormal" android:id="@id/textDevice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="device" />
+    </LinearLayout>
+</LinearLayout>

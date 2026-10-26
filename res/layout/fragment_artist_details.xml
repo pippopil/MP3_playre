@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="@color/colorToolbar" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/ib_artist_detail_back" android:background="@color/transparent" android:padding="4.0dp" android:clickable="true" android:layout_width="@dimen/toolbar_back" android:layout_height="@dimen/toolbar_back" android:foreground="@drawable/style_highlight_button" android:src="@drawable/ic_back" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/toolbar_title" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_artist_detail_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:text="Artist Name" android:maxLines="1" android:layout_toLeftOf="@id/btn_shuft_list" android:layout_toRightOf="@id/ib_artist_detail_back" />
+            <FrameLayout android:id="@id/btn_shuft_list" android:visibility="gone" android:layout_width="40.0dp" android:layout_height="match_parent" android:foreground="@drawable/style_highlight_button" android:layout_toLeftOf="@id/btn_sort_list" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:background="@android:color/transparent" android:padding="1.0dp" android:layout_width="@dimen/toolbar_back" android:layout_height="@dimen/toolbar_back" android:foreground="@drawable/style_highlight_button" android:src="@drawable/ic_shuffle_white_24dp" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/btn_sort_list" android:layout_width="50.0dp" android:layout_height="match_parent" android:foreground="@drawable/style_highlight_button" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center" android:background="@android:color/transparent" android:padding="3.0dp" android:layout_width="@dimen/toolbar_back" android:layout_height="@dimen/toolbar_back" android:foreground="@drawable/style_highlight_button" android:src="@drawable/ic_az" />
+            </FrameLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_artist_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_artist_detail" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

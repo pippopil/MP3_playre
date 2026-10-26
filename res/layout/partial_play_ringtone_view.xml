@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/retangle_transprent_dark_normal_bkg" android:layout_width="match_parent" android:layout_height="@dimen/heigh_view_smaller" android:layout_marginLeft="6.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="6.0dp" android:layout_marginBottom="3.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_neo" android:layout_centerVertical="true" style="@style/AnchorView" />
+    <ImageButton android:id="@id/play_preview" android:background="@drawable/retangle_dark_violet_selector" android:paddingLeft="@dimen/padding_item_less" android:paddingRight="@dimen/padding_item_less" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_play_result" android:layout_centerVertical="true" />
+    <ImageButton android:id="@id/btn_save_preview" android:background="@drawable/retangle_transparent_round_selector" android:padding="@dimen/padding_half_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dp" android:layout_marginRight="@dimen/padding_small" android:src="@drawable/ic_save" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lnl_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" android:layout_marginBottom="3.0dp" android:layout_toLeftOf="@id/btn_save_preview" android:layout_toRightOf="@id/play_preview" android:layout_above="@id/view_neo">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textColor="@color/c_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_try_listen" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dp" android:layout_marginTop="3.0dp" android:layout_marginRight="6.0dp" android:layout_toLeftOf="@id/btn_save_preview" android:layout_toRightOf="@id/play_preview" android:layout_below="@id/view_neo">
+        <TextView android:textSize="12.0sp" android:textColor="@color/c_white" android:id="@id/timer_current_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" />
+        <SeekBar android:id="@id/seekbar_preview" android:paddingLeft="10.0dp" android:paddingRight="10.0dp" android:paddingBottom="5.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:maxHeight="3.0dp" android:progressDrawable="@drawable/seekbar_progress_define" android:minHeight="3.0dp" android:thumb="@drawable/seekbar_progress_thumb" android:thumbOffset="10.0dp" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/c_white" android:id="@id/time_size_preview" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="12:34" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fakeMask" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

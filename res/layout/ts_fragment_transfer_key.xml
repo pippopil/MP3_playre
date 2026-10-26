@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?sdkColorViewBg" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@id/textKeyMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" android:text="@string/message_transfer_key" style="@style/SdkText" />
+        <TextView android:id="@id/textKeyTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_key_time" style="@style/SdkText" />
+        <TextView android:textSize="54.0dp" android:textStyle="bold" android:textColor="?sdkColorTextKey" android:id="@id/keyView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dp" android:text="000 000" />
+        <TextView android:id="@id/textLinkShareMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dp" android:text="@string/message_link_share" style="@style/SdkText" />
+        <Button android:theme="@style/ButtonShare" android:id="@id/shareLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/button_link_share" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/waitProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateOnly="false" android:layout_centerInParent="true" style="?android:progressBarStyleLarge" />
+    <ImageView android:id="@id/sendAnywhere" android:clickable="true" android:layout_width="103.0dp" android:layout_height="29.0dp" android:layout_marginBottom="48.0dp" android:src="?sdkImagePoweredBySa" android:scaleType="fitCenter" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

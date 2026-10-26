@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <padding android:left="0.0dp" android:top="0.0dp" android:right="0.0dp" android:bottom="0.0dp" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="0.0dp" android:top="0.0dp" android:right="0.0dp" android:bottom="1.0dp" />
+            <solid android:color="#55d4d4d4" />
+            <corners android:radius="@dimen/app_widget_card_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="0.0dp" android:top="0.0dp" android:right="0.0dp" android:bottom="1.0dp" />
+            <solid android:color="#55dddddd" />
+            <corners android:radius="@dimen/app_widget_card_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@android:color/white" />
+            <corners android:radius="@dimen/app_widget_card_radius" />
+        </shape>
+    </item>
+</layer-list>

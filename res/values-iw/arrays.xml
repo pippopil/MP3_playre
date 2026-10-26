@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>אל תכלול רשימת שירים</item>
+        <item>אל תכלול באפליקציה כולה</item>
+    </string-array>
+</resources>

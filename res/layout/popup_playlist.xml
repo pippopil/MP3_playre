@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/menu_shuffle_all" android:background="@color/bg_tab_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button">
+        <ImageView android:background="@color/transparent" android:padding="8.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/ic_shuffter" />
+        <TextView android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/shuffle_all" />
+    </LinearLayout>
+    <View android:background="@color/lightGray" android:layout_width="match_parent" android:layout_height="1.0px" />
+    <LinearLayout android:id="@id/menu_save_as" android:background="@color/bg_tab_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button">
+        <ImageView android:background="@color/transparent" android:padding="9.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="3.0dp" android:src="@drawable/ic_save_as" />
+        <TextView android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dp" android:text="@string/save_as" />
+    </LinearLayout>
+</LinearLayout>

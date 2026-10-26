@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fr_content_widget" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/white" android:gravity="center" android:id="@id/msg_no_selected_song" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/msg_click_here_to_select_song" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/rl_control_music" android:padding="8.0dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4.0dp" android:src="@drawable/ic_cover_widget" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_above="@id/ll_action_music" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_action_music" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/proccess" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="4.0dp" android:layout_below="@id/image">
+                <TextView android:textColor="@color/white" android:id="@id/startTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+                <ProgressBar android:id="@id/pb_playing_song" android:layout_width="match_parent" android:layout_height="4.5dp" android:layout_margin="4.0dp" android:progressDrawable="@drawable/seek_bar_style_home" android:layout_weight="1.0" style="?android:progressBarStyleHorizontal" />
+                <TextView android:textColor="@color/white" android:id="@id/endTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+            </LinearLayout>
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Samsung" android:singleLine="true" />
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Headline" android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Over the Horizon" android:singleLine="true">
+                <requestFocus android:focusable="true" android:focusableInTouchMode="true" android:duplicateParentState="true" />
+            </TextView>
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dp" android:text="Brand music" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/media_actions" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_margin="8.0dp">
+                <ImageView android:id="@id/ib_repeat" android:background="@drawable/widget_selector_light" android:padding="9.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_repeat_widget" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/button_prev" android:background="@drawable/widget_selector_light" android:padding="9.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_previous_widget" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/button_toggle_play_pause" android:background="@drawable/widget_selector_light" android:padding="9.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_play_widget_active" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/button_next" android:background="@drawable/widget_selector_light" android:padding="9.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_next_widget" android:layout_weight="1.0" />
+                <ImageView android:id="@id/ib_shuffle" android:background="@drawable/widget_selector_light" android:padding="9.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_shuffle_widget" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

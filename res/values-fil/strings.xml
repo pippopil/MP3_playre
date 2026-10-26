@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Alert">Alerto</string>
+    <string name="activity">Aktibidad</string>
+    <string name="activity_message_cancel_transfer">Sigurado ka bang gusto mong itigil ang paglipat?</string>
+    <string name="button_cancel">Kanselahin</string>
+    <string name="button_no">Hindi</string>
+    <string name="button_ok">OK</string>
+    <string name="cancel">Kanselahin</string>
+    <string name="canceled">Kinansela</string>
+    <string name="completed">Nakumpleto</string>
+    <string name="delete">Tanggalin</string>
+    <string name="done">Tapos na</string>
+    <string name="expired">Nag-expire</string>
+    <string name="failed">Nabigo</string>
+    <string name="key_expire_in_days">Mag-e-expire sa loob ng %1$d (na) araw</string>
+    <string name="key_expire_in_hour_minute">Mag-e-expire sa loob ng %1$02dH %2$02dM</string>
+    <string name="message_key_expired">Nag-expire na ang key na (%1$s)</string>
+    <string name="message_key_time">Ang 6-digit key ay mag-e-expire sa loob ng %s</string>
+    <string name="message_push_key">Ipinadala ang mga file</string>
+    <string name="message_transfer_key">Mangyaring ipaalam sa tatanggap ang 6-digit key</string>
+    <string name="notification_title_transfer">Send Anywhere</string>
+    <string name="receive">Tumanggap</string>
+    <string name="sdk_files">Mga File</string>
+    <string name="sdk_help_receive_short">Ilagay ang key sa input field.</string>
+    <string name="sdk_invalid_download_path">"Walang available na lokasyon para sa pag-download. Pakipili ang bagong lokasyon. "</string>
+    <string name="sdk_message_invalid_key">"Ang key ay hindi tama o nag-expire na. 
+
+ Pakitingan ang key muli."</string>
+    <string name="sdk_new_shared">Bagong Ibinahagi</string>
+    <string name="sdk_receive_ui_edit_key_hint">Ilagay ang Key</string>
+    <string name="sdk_transfer_error_with_code">Nagkaroon ng error habang inililipat. (Code : %1$x)</string>
+    <string name="send">Ipadala</string>
+    <string name="sent">Ipinadala</string>
+    <string name="share">Ibahagi</string>
+    <string name="title_how_it_works">Paano ito gumagana</string>
+</resources>

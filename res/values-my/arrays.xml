@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>သီချင်းစာရင်းထဲကဖယ်ထုတ်ရန်</item>
+        <item>မြေတပြင်လုံး app ကိုကနေဖယ်ထုတ်</item>
+    </string-array>
+</resources>

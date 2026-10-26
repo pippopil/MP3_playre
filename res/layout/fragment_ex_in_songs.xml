@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_ex_in_songs" android:paddingBottom="?actionBarSize" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <android.support.design.widget.FloatingActionButton android:layout_gravity="right|bottom" android:id="@id/fab_add_exclude_folder" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" android:foreground="@drawable/style_highlight_button" android:src="@android:drawable/ic_input_add" android:tint="@color/white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:backgroundTint="@color/green_common" app:elevation="3.0dp" app:fabSize="normal" app:layout_anchor="@id/rv_ex_in_songs" app:layout_anchorGravity="end|bottom" />
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/app_bar_exclude_songs" layout="@layout/layout_empty_ads" />
+</RelativeLayout>

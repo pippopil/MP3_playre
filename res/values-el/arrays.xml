@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>Εξαίρεση από τη λίστα τραγουδιών</item>
+        <item>Εξαίρεση από ολόκληρη την εφαρμογή</item>
+    </string-array>
+</resources>

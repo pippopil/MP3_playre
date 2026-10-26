@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>Виключити зі списку пісень</item>
+        <item>Виключити з усієї програми</item>
+    </string-array>
+</resources>

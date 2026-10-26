@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RadioGroup android:id="@id/radio_group" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:theme="@style/RadioButtonStyle" android:id="@id/rd_option_1" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/_3_seconds" />
+            <RadioButton android:theme="@style/RadioButtonStyle" android:id="@id/rd_option_2" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/_5_seconds" />
+            <RadioButton android:theme="@style/RadioButtonStyle" android:id="@id/rd_option_3" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/_10_seconds" />
+            <RadioButton android:theme="@style/RadioButtonStyle" android:id="@id/rd_option_4" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/_15_seconds" />
+            <RadioButton android:theme="@style/RadioButtonStyle" android:id="@id/rd_option_5" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/_30_seconds" />
+        </RadioGroup>
+        <LinearLayout android:orientation="horizontal" android:padding="1.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:theme="@style/RadioButtonStyle" android:id="@id/rd_other" android:paddingLeft="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/other" />
+            <EditText android:id="@id/et_orther" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLength="3" android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textStyle="bold" android:id="@id/btn_cancel" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_cancel" />
+            <Button android:textStyle="bold" android:id="@id/btn_ok" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
