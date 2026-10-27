@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.AppCompatImageView android:id="@id/iv_player_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+    <include layout="@layout/subview_toolbar_player" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/ll_banner_bottom" android:layout_below="@id/rl_toolbar_player">
+        <RelativeLayout android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <com.github.vivchar.viewpagerindicator.ViewPagerIndicator android:id="@id/view_pager_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dp" android:layout_below="@id/rl_toolbar_player" android:layout_centerHorizontal="true" app:delimiterSize="8.0dp" app:itemScale="1.2" app:itemSelectedTint="@color/green_common" app:itemSize="13.0dp" app:itemTint="@color/dark_grey" />
+            <android.support.v4.view.ViewPager android:id="@id/pager_player" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8.0dp" android:layout_below="@id/view_pager_indicator" />
+        </RelativeLayout>
+        <View style="@style/VerticalDivider" />
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@id/fr_player_controls" android:layout_width="320.0dp" android:layout_height="wrap_content" android:layout_above="@id/ll_banner_bottom" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fr_fragment_choose_wallpaper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/ll_banner_bottom" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_banner_bottom" android:background="@color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

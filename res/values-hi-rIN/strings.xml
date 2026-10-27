@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Alert">चेतावनी</string>
+    <string name="activity">गतिविधि</string>
+    <string name="activity_message_cancel_transfer">क्या आप सच में ट्रांसफर बंद करना चाहते हैं?</string>
+    <string name="button_cancel">रद्द करें</string>
+    <string name="button_no">नहीं</string>
+    <string name="button_ok">ठीक है</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="canceled">रद्द किया गया</string>
+    <string name="completed">पूरा हुआ</string>
+    <string name="delete">डिलीट करें</string>
+    <string name="done">पूरा हुआ</string>
+    <string name="expired">एक्सपायर हो गया</string>
+    <string name="failed">असफल</string>
+    <string name="key_expire_in_days">एक्सपायर %1$d दिनों में</string>
+    <string name="key_expire_in_hour_minute">एक्सपायर %1$02dH %2$02dM</string>
+    <string name="message_key_expired">यह कुंजी (%1$s) एक्सपायर हो चुकी है</string>
+    <string name="message_key_time">6-अंकों वाल यह कुंजी %s में एक्सपायर होगा</string>
+    <string name="message_push_key">फाइलें भेजी गईं</string>
+    <string name="message_transfer_key">कृपया रिसीवर को यह ६ अंक का कोड बताएं।</string>
+    <string name="notification_title_transfer">Send Anywhere</string>
+    <string name="receive">प्राप्त करें</string>
+    <string name="sdk_files">फाइलें</string>
+    <string name="sdk_help_receive_short">इनपुट फील्ड में कुंजी डालें</string>
+    <string name="sdk_invalid_download_path">"कोई डाउनलोड लोकेशन उपलब्ध नहीं। कृपया नया लोकेशन चुनें। "</string>
+    <string name="sdk_message_invalid_key">"कुंजी अमान्य है या एक्सपायर हो चुका है।
+
+ कृपया कुंजी दुबारा जांचे।"</string>
+    <string name="sdk_new_shared">नया शेयर किया गया</string>
+    <string name="sdk_receive_ui_edit_key_hint">इनपुट KEY</string>
+    <string name="sdk_transfer_error_with_code">ट्रांसफर होने में त्रुटि आई। (कोड : %1$x)</string>
+    <string name="send">भेजें</string>
+    <string name="sent">भेजा गया</string>
+    <string name="share">शेयर करें</string>
+    <string name="title_how_it_works">यह कैसे काम करता है</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>oxylabs_sdk_enable</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>oxylabs_sdk_show_GDPR_dialog</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>oxylabs_sdk_enable_pro</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <key>oxylabs_sdk_show_GDPR_dialog_pro</key>
+        <value>0</value>
+    </entry>
+</defaultsMap>

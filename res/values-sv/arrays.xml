@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>Exkludera från sånglistan</item>
+        <item>Uteslut från hela app</item>
+    </string-array>
+</resources>

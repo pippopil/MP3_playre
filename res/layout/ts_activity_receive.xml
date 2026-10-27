@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?sdkColorActivityBg" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:background="?sdkColorToolbarBg" android:layout_width="match_parent" android:layout_height="?actionBarSize" android:layout_alignParentTop="true" app:titleTextColor="?sdkColorToolbarTitle" />
+    <View android:background="@drawable/sdk_toolbar_drop_shadow" android:layout_width="match_parent" android:layout_height="6.0dp" android:layout_below="@id/toolbar" />
+    <android.support.v7.widget.CardView android:id="@id/layoutKey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="8.0dp" android:layout_below="@id/toolbar">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?sdkColorEditKeyBg" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="48.0dp">
+            <EditText android:textColor="?sdkColorEditKeyText" android:id="@id/editKey" android:background="@android:color/transparent" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:hint="@string/sdk_receive_ui_edit_key_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="textNoSuggestions" android:imeOptions="actionDone|flagNoExtractUi" />
+            <ImageButton android:id="@id/buttonDownload" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="?sdkImageDownload" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <TextView android:id="@id/textHelp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:text="@string/sdk_help_receive" android:layout_below="@id/layoutKey" android:layout_centerHorizontal="true" style="@style/SdkText" />
+    <RelativeLayout android:id="@id/layoutError" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dp" android:layout_below="@id/layoutKey">
+        <TextView android:textSize="15.0dp" android:textColor="#f44336" android:gravity="center_horizontal" android:id="@id/textError" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sdk_message_invalid_key" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginRight="27.0dp" android:src="@drawable/vic_icon_error" android:scaleType="fitCenter" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/waitProgress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:progressBarStyleLarge" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/timer_text_size" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/tv_timer" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="120" android:scrollHorizontally="true" android:singleLine="true" android:layout_weight="1.0" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" />
+        <android.support.v7.widget.SwitchCompat android:id="@id/sw_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentRight="true" android:track="@drawable/switch_track_on" app:theme="@style/SwitchStyle" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_timer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+        <View android:background="@color/lightGray" android:layout_width="match_parent" android:layout_height="2.0px" />
+        <SeekBar android:id="@id/sb_timer" android:padding="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:progressDrawable="@drawable/seekbar_style" />
+        <TextView android:textSize="@dimen/timer_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minute_0" android:layout_below="@id/sb_timer" />
+        <TextView android:textSize="@dimen/timer_text_size" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/minute_120" android:layout_below="@id/sb_timer" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

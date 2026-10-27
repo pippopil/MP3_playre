@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/observableScrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/ll_action">
+        <LinearLayout android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textAppearance="@style/TextAppearance.AppCompat.Title" android:textColorHint="@color/lightGray" android:gravity="center_vertical" android:id="@id/title1" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/song" android:singleLine="true" android:maxLength="254" android:inputType="textCapWords" android:fontFamily="sans-serif-medium" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textAppearance="@style/TextAppearance.AppCompat.Title" android:textColorHint="@color/lightGray" android:gravity="center_vertical" android:id="@id/title2" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/album" android:singleLine="true" android:inputType="textCapWords" android:fontFamily="sans-serif-medium" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textAppearance="@style/TextAppearance.AppCompat.Title" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/artist" android:singleLine="true" android:inputType="textCapWords" android:fontFamily="sans-serif" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textAppearance="@style/TextAppearance.AppCompat.Title" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/genre" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/genre" android:singleLine="true" android:fontFamily="sans-serif" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textAppearance="@style/TextAppearance.AppCompat.Title" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/year" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/year" android:singleLine="true" android:maxLength="4" android:digits="0123456789." android:inputType="number" android:fontFamily="sans-serif" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textAppearance="@style/TextAppearance.AppCompat.Title" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/image_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/track_hint" android:singleLine="true" android:maxLength="5" android:digits="0123456789." android:inputType="number" android:fontFamily="sans-serif" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textAppearance="@style/TextAppearance.AppCompat.Title" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/lyrics" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/lyrics" android:inputType="textMultiLine" android:fontFamily="sans-serif" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/ll_action" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textStyle="bold" android:id="@id/btn_cancel" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_cancel" />
+        <Button android:textStyle="bold" android:id="@id/btn_ok" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" />
+    </LinearLayout>
+</RelativeLayout>

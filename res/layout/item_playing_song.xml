@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/style_highlight_button" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingRight="@dimen/activity_horizontal_margin" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_item_song_avatar" android:padding="@dimen/image_padding" android:layout_width="@dimen/image_size" android:layout_height="@dimen/image_size" android:scaleType="centerCrop" android:cropToPadding="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" android:layout_toLeftOf="@id/iv_item_song_playing" android:layout_toRightOf="@id/iv_item_song_avatar" android:layout_centerVertical="true">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body2" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_item_song_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Track title" android:singleLine="true" />
+                <TextView android:textColor="@color/lightGray2" android:ellipsize="end" android:id="@id/tv_item_song_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Track author" android:singleLine="true" android:layout_below="@id/tv_item_song_title" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_item_song_playing" android:visibility="visible" android:layout_width="25.0dp" android:layout_height="12.0dp" android:layout_marginRight="8.0dp" android:src="@drawable/music2" android:layout_toLeftOf="@id/tv_item_song_duration" android:layout_centerVertical="true" />
+            <TextView android:id="@id/tv_item_song_duration" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dp" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/lightGray" android:layout_width="match_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</RelativeLayout>

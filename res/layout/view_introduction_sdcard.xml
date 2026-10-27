@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager android:id="@id/vp_introduction" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/fr_bottom" />
+        <RelativeLayout android:id="@id/fr_bottom" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_alignParentBottom="true">
+            <View android:background="@color/black" android:layout_width="match_parent" android:layout_height="1.0dp" android:alpha="0.6" />
+            <com.tohsoft.music.ui.custom.CirclePageIndicator android:id="@id/indicator_intro" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:fillColor="@color/blue" app:pageColor="@color/white" app:strokeColor="@color/blue" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_next_intro" android:background="?android:selectableItemBackground" android:paddingRight="16.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/black" android:gravity="center" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_next" />
+                <ImageView android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_right" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_done_intro" android:background="?android:selectableItemBackground" android:paddingRight="16.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/black" android:gravity="center" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_gotit" />
+                <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_done_black" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

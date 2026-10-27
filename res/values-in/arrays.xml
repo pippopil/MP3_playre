@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>Kecualikan dari daftar lagu</item>
+        <item>Kecualikan dari seluruh aplikasi</item>
+    </string-array>
+</resources>

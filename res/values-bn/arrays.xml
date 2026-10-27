@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>গান তালিকা থেকে বাদ দিন</item>
+        <item>পুরো অ্যাপ্লিকেশন থেকে বাদ দিন</item>
+    </string-array>
+</resources>

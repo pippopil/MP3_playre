@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fr_content_widget" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/white" android:gravity="center" android:id="@id/msg_no_selected_song" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/msg_click_here_to_select_song" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/rl_control_music" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/image" android:layout_width="@dimen/app_widget_card_image_size_large" android:layout_height="@dimen/app_widget_card_image_size_large" android:layout_margin="5.0dp" android:src="@drawable/ic_cover_widget" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/media_titles" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textColor="@color/white" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dp" android:text="Over the Horizon" android:singleLine="true" />
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Caption" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:text="Brand music" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/media_actions" android:padding="3.0dp" android:layout_width="match_parent" android:layout_height="35.0dp" android:layout_below="@id/media_titles">
+                <ImageView android:id="@id/ib_repeat" android:background="@drawable/widget_selector_light" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_repeat_widget" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/button_prev" android:background="@drawable/widget_selector_light" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_previous_widget" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/button_toggle_play_pause" android:background="@drawable/widget_selector_light" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_play_widget_active" android:layout_weight="1.0" />
+                <ImageButton android:id="@id/button_next" android:background="@drawable/widget_selector_light" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_next_widget" android:layout_weight="1.0" />
+                <ImageView android:id="@id/ib_shuffle" android:background="@drawable/widget_selector_light" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_shuffle_widget" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

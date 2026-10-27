@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>പാട്ടിന്റെ ലിസ്റ്റിൽ നിന്ന് ഒഴിവാക്കുക</item>
+        <item>മുഴുവൻ അപ്ലിക്കേഷനിൽ നിന്നും ഒഴിവാക്കുക</item>
+    </string-array>
+</resources>

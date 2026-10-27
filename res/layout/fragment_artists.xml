@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tohsoft.music.utils.NestedScrollCoordinatorLayout android:id="@id/coordinator_layout_main" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@id/fr_player_controls">
+        <android.support.design.widget.AppBarLayout android:id="@id/app_bar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0.0dp">
+            <android.support.design.widget.CollapsingToolbarLayout android:id="@id/collapsing_toolbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_scrollFlags="scroll|enterAlways">
+                <include android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height" layout="@layout/search_box" />
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_artists" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/box_search" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <android.support.v7.widget.RecyclerView android:id="@id/rv_artists" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </com.tohsoft.music.utils.NestedScrollCoordinatorLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/toolbar_height" layout="@layout/layout_empty_ads" />
+    <FrameLayout android:id="@id/fr_artist_details" android:layout_width="match_parent" android:layout_height="match_parent" />
+</RelativeLayout>

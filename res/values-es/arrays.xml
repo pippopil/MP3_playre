@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>Excluir de la lista de canciones</item>
+        <item>Excluir de toda la aplicación</item>
+    </string-array>
+</resources>

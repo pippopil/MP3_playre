@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.daimajia.swipe.SwipeLayout android:id="@id/view_swipe_lock_screen" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@id/iv_bottom_swipe_layout" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <RelativeLayout android:id="@id/rl_main_lock_screen" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/background" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/iv_background_blur_lock_screen" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+            <RelativeLayout android:id="@id/rl_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dp" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_time" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="70.0sp" android:textColor="@color/white" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dp" android:text="11:30" android:includeFontPadding="false" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-condensed" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_time_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dp" android:text="AM" android:maxLines="1" android:includeFontPadding="false" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-condensed" />
+                </LinearLayout>
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TUESDAY, MARCH 21" android:includeFontPadding="false" android:layout_below="@id/ll_time" android:layout_centerHorizontal="true" android:textAllCaps="true" android:fontFamily="sans-serif-condensed" />
+            </RelativeLayout>
+            <FrameLayout android:id="@id/fr_music_lock_screen" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginTop="32.0dp" android:layout_marginRight="8.0dp" android:layout_below="@id/rl_time" />
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16.0dp" android:layout_above="@id/tv_slide_right_to_unlock" android:layout_below="@id/fr_music_lock_screen">
+                <FrameLayout android:layout_gravity="center" android:id="@id/fr_ads_lock_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </ScrollView>
+            <com.hanks.htextview.rainbow.RainbowTextView android:textSize="18.0sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/tv_slide_right_to_unlock" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/lbl_slide_right_to_unlock" android:maxLines="1" android:scrollHorizontally="true" android:layout_alignParentBottom="true" app:colorSpace="120.0dp" app:colorSpeed="8.0dp" />
+        </RelativeLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</RelativeLayout>

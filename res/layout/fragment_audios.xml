@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/box_search" android:background="@color/colorToolbar" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_height">
+        <TextView android:textSize="15.0sp" android:textColor="@color/lightGray2" android:gravity="left|center" android:id="@id/txt_search_title" android:paddingLeft="5.0dp" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10.0dp" android:layout_marginRight="50.0dp" android:text="@string/title_select_root" android:layout_centerVertical="true" />
+        <android.support.v7.widget.SwitchCompat android:id="@id/btn_show_root" android:layout_width="50.0dp" android:layout_height="match_parent" android:checked="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:theme="@style/SwitchStyle" />
+    </RelativeLayout>
+    <android.support.v7.widget.AppCompatTextView android:textColor="@color/white" android:ellipsize="middle" android:id="@id/tv_current_path" android:padding="8.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/box_search" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh_folders" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/tv_current_path">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_audio" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="8.0dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@id/tv_current_path" layout="@layout/layout_empty_ads" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ga_sessionTimeout">300</integer>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <string name="ga_trackingId">UA-69751436-3</string>
+    <string name="ga_sampleFrequency">100.0</string>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <screenName name="info.androidhive.googleanalytics.activity.MainActivity">Home Screen</screenName>
+    <screenName name="info.androidhive.googleanalytics.activity.SecondActivity">Second Screen</screenName>
+</resources>

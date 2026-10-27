@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>गीत सूचीबाट बहिष्कार गर्नुहोस्</item>
+        <item>सम्पूर्ण एपबाट बहिष्कार गर्नुहोस्</item>
+    </string-array>
+</resources>

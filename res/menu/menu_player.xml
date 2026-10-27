@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_more_add" android:id="@id/mi_add_to_playlist" android:orderInCategory="100" android:title="@string/add_to_playlist" />
+    <item android:icon="@drawable/ic_favourite" android:id="@id/mi_add_to_favorite" android:visible="false" android:orderInCategory="101" android:title="@string/add_to_favorite" />
+    <item android:icon="@drawable/ic_ringtone" android:id="@id/mi_ringtone" android:orderInCategory="102" android:title="@string/ringtone" />
+    <item android:icon="@drawable/ic_sound_effect" android:id="@id/mi_effect" android:orderInCategory="103" android:title="@string/effect" />
+    <item android:icon="@drawable/ic_share_context" android:id="@id/mi_song_share" android:orderInCategory="104" android:title="@string/settings_share" />
+</menu>

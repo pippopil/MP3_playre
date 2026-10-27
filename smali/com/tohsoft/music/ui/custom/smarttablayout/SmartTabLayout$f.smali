@@ -1,0 +1,22 @@
+.class public interface abstract Lcom/tohsoft/music/ui/custom/smarttablayout/SmartTabLayout$f;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/tohsoft/music/ui/custom/smarttablayout/SmartTabLayout;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "f"
+.end annotation
+
+
+# virtual methods
+.method public abstract a(I)I
+.end method
+
+.method public abstract b(I)I
+.end method

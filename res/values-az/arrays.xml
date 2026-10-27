@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exclude_dialog_choice">
+        <item>Mahnı siyahısından çıxarın</item>
+        <item>Bütün tətbiqdən istisna et</item>
+    </string-array>
+</resources>
